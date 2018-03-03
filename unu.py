@@ -20,7 +20,7 @@ class Card:
     
     def is_equal(self,other_card):
         """returns true if atleast one aspect of the card is identical to the other"""
-      return self.num == other_card.num or self.color == other_card.color
+        return self.num == other_card.num or self.color == other_card.color
 
 
 def generate_hand(card_num):
@@ -38,3 +38,4 @@ def show_hand(h):
 
 hand = generate_hand(8)
 show_hand(hand)
+print(hand(0).is_equal(hand(1)))
