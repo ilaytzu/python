@@ -15,9 +15,11 @@ class Card:
         print(self.num, self.color)
         
     def is_same(self,other_card):
+        """returns true if both aspects of the card are the same"""
       return self.num == other_card.num and self.color == other_card.color
     
     def is_equal(self,other_card):
+        """returns true if atleast one aspect of the card is identical to the other"""
       return self.num == other_card.num or self.color == other_card.color
 
 
