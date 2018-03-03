@@ -13,6 +13,12 @@ class Card:
     def print_card(self):
         """print the card"""
         print(self.num, self.color)
+        
+    def is_same(self,other_card):
+      return self.num == other_card.num and self.color == other_card.color
+    
+    def is_equal(self,other_card):
+      return self.num == other_card.num or self.color == other_card.color
 
 
 def generate_hand(card_num):
@@ -27,7 +33,6 @@ def show_hand(h):
     """prints a hand"""
     for x in h:
         x.print_card()
-
 
 hand = generate_hand(8)
 show_hand(hand)
