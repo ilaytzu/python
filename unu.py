@@ -65,6 +65,10 @@ def get_card():
         return get_card()
 
 
+def make_choice():
+    return
+
+
 colors = ("red", "yellow", "green", "blue")
 win = False
 centercard = Card(random.randint(1, 8), random.choice(colors))
@@ -73,3 +77,9 @@ enemy = generate_hand(8)
 you = generate_hand(8)
 
 
+def __main__():
+
+
+
+if __name__ == "__main__":
+    __main__()
